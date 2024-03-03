@@ -1,4 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import transpileModules from "next-transpile-modules";
 
-export default nextConfig;
+const withTM = transpileModules(["@captn/joy", "@mui/joy"]); // Pass the modules you would like to see transpiled
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	output: "export",
+	assetPrefix: "./",
+	trailingSlash: true,
+};
+
+export default withTM(nextConfig);
