@@ -1,3 +1,4 @@
+import { globalStyles } from "@captn/joy/styles";
 import { ThemeProvider } from "@captn/joy/theme";
 import CssBaseline from "@mui/joy/CssBaseline";
 import type { AppProps } from "next/app";
@@ -6,6 +7,7 @@ import Head from "next/head";
 function App({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeProvider>
+			{globalStyles}
 			<Head>
 				<title>Blibla</title>
 				<meta
