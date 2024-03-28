@@ -11,7 +11,7 @@ const withTM = transpileModules([
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	output: "export",
-	assetPrefix: "./",
+	assetPrefix: ".",
 	trailingSlash: true,
 	images: {
 		unoptimized: true,
