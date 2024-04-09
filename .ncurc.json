@@ -1,4 +1,3 @@
 {
-  "upgrade": true,
-  "reject": ["@types/node", "codemirror", "next", "sharp"]
+  "reject": ["@types/node", "eslint"]
 }

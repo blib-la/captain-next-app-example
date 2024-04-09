@@ -6,12 +6,11 @@ const withTM = transpileModules([
 	"@captn/utils",
 	"@captn/react",
 	"@captn/theme",
-]); // Pass the modules you would like to see transpiled
+]);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	output: "export",
-	assetPrefix: ".",
 	trailingSlash: true,
 	images: {
 		unoptimized: true,
